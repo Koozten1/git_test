@@ -17,7 +17,7 @@ module.exports = function(req, res, next){
         
         const userData =  tokenServise.validateAccessToken(accessToken)
 
-        if(!userData || userData.statys != 'admin'){
+        if(!userData || userData.statys != 'admi'){
             return next(ApiError.UnauthorizeError())
         }
 
